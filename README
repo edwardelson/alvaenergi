@@ -1,2 +1,6 @@
 v1.0
 - first prototype of alva energi monitoring web
+
+v1.1
+- /admin = map of geranting + iframe sparkfun
+- /content = live streaming puskesmas + news + events + cctv for jakarta smart city openAPI and web scraping
