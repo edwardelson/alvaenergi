@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster-src.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_684f6337f1e042a6b63c21fc86bd77cf {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_684f6337f1e042a6b63c21fc86bd77cf" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var southWest = L.latLng(-90, -180);
+                var northEast = L.latLng(90, 180);
+                var bounds = L.latLngBounds(southWest, northEast);
+            
+
+            var map_684f6337f1e042a6b63c21fc86bd77cf = L.map(
+                                  'map_684f6337f1e042a6b63c21fc86bd77cf',
+                                  {center: [-6.21462,106.865],
+                                  zoom: 10,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_db32e0028c1c4866a59996a36eba9798 = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    continuousWorld: false,
+                    noWrap: false,
+                    attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
+                    detectRetina: false
+                    }
+                ).addTo(map_684f6337f1e042a6b63c21fc86bd77cf);
+
+        
+    
+
+            var marker_efb556995ba6482cbeddda6017c127fb = L.marker(
+                [-6.351944,106.814163],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_684f6337f1e042a6b63c21fc86bd77cf);
+            
+    
+            var popup_e35a0f14ae854649b14385953a613f54 = L.popup({maxWidth: '300'});
+
+            
+                var html_3f3604e0f823472190c9d6fea509e111 = $('<div id="html_3f3604e0f823472190c9d6fea509e111" style="width: 100.0%; height: 100.0%;">PUSKESMAS KECAMATAN JAGAKARSA</div>')[0];
+                popup_e35a0f14ae854649b14385953a613f54.setContent(html_3f3604e0f823472190c9d6fea509e111);
+            
+
+            marker_efb556995ba6482cbeddda6017c127fb.bindPopup(popup_e35a0f14ae854649b14385953a613f54);
+
+            
+        
+    
+
+            var marker_7259b61df47741e8a5610cc1f6d18d84 = L.marker(
+                [-6.320833,106.825554],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_684f6337f1e042a6b63c21fc86bd77cf);
+            
+    
+            var popup_286c2211d4a94179b50d1f5be2c03d5c = L.popup({maxWidth: '300'});
+
+            
+                var html_9c7ef9839b1049938734fdb1d90cc952 = $('<div id="html_9c7ef9839b1049938734fdb1d90cc952" style="width: 100.0%; height: 100.0%;">PUSKESMAS KECAMATAN PASAR MINGGU</div>')[0];
+                popup_286c2211d4a94179b50d1f5be2c03d5c.setContent(html_9c7ef9839b1049938734fdb1d90cc952);
+            
+
+            marker_7259b61df47741e8a5610cc1f6d18d84.bindPopup(popup_286c2211d4a94179b50d1f5be2c03d5c);
+
+            
+        
+    
+
+            var marker_8e3d65181cb1410dabf1713566fc110a = L.marker(
+                [-6.286667,106.793053],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_684f6337f1e042a6b63c21fc86bd77cf);
+            
+    
+            var popup_23f5ddd942f64caa98172be6e05c2c99 = L.popup({maxWidth: '300'});
+
+            
+                var html_7802afa39a15494fabf427da00370d29 = $('<div id="html_7802afa39a15494fabf427da00370d29" style="width: 100.0%; height: 100.0%;">PUSKESMAS KECAMATAN CILANDAK</div>')[0];
+                popup_23f5ddd942f64caa98172be6e05c2c99.setContent(html_7802afa39a15494fabf427da00370d29);
+            
+
+            marker_8e3d65181cb1410dabf1713566fc110a.bindPopup(popup_23f5ddd942f64caa98172be6e05c2c99);
+
+            
+        
+    
+
+            var marker_b39a01b50866439aa9578cd17c581ab5 = L.marker(
+                [-6.245278,106.752777],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_684f6337f1e042a6b63c21fc86bd77cf);
+            
+    
+            var popup_c512b16c8d7d43b1a18ebc68e6449acd = L.popup({maxWidth: '300'});
+
+            
+                var html_730f9704bf164b9dbe6a5bbba23dfa1b = $('<div id="html_730f9704bf164b9dbe6a5bbba23dfa1b" style="width: 100.0%; height: 100.0%;">PUSKESMAS KECAMATAN PESANGGRAHAN</div>')[0];
+                popup_c512b16c8d7d43b1a18ebc68e6449acd.setContent(html_730f9704bf164b9dbe6a5bbba23dfa1b);
+            
+
+            marker_b39a01b50866439aa9578cd17c581ab5.bindPopup(popup_c512b16c8d7d43b1a18ebc68e6449acd);
+
+            
+        
+    
+
+            var marker_c71e3eb51901432bb2eb40d281c0ac63 = L.marker(
+                [-6.249722,106.778053],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_684f6337f1e042a6b63c21fc86bd77cf);
+            
+    
+            var popup_9117e4c62e6b4e8a8dacb9d5e0d6ddb2 = L.popup({maxWidth: '300'});
+
+            
+                var html_49937f36dd69441fa6159a024e0e1a69 = $('<div id="html_49937f36dd69441fa6159a024e0e1a69" style="width: 100.0%; height: 100.0%;">PUSKESMAS KECAMATAN KEBAYORAN LAMA</div>')[0];
+                popup_9117e4c62e6b4e8a8dacb9d5e0d6ddb2.setContent(html_49937f36dd69441fa6159a024e0e1a69);
+            
+
+            marker_c71e3eb51901432bb2eb40d281c0ac63.bindPopup(popup_9117e4c62e6b4e8a8dacb9d5e0d6ddb2);
+
+            
+        
+    
+
+            var marker_6dd6603256c7433fa851b9a353f94d1c = L.marker(
+                [-6.247222,106.805557],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_684f6337f1e042a6b63c21fc86bd77cf);
+            
+    
+            var popup_36c3e19b21fc476db6b02439233ae85c = L.popup({maxWidth: '300'});
+
+            
+                var html_c1c0f484f45e4939ad07939c14265bb6 = $('<div id="html_c1c0f484f45e4939ad07939c14265bb6" style="width: 100.0%; height: 100.0%;">PUSKESMAS KECAMATAN KEBAYORAN BARU</div>')[0];
+                popup_36c3e19b21fc476db6b02439233ae85c.setContent(html_c1c0f484f45e4939ad07939c14265bb6);
+            
+
+            marker_6dd6603256c7433fa851b9a353f94d1c.bindPopup(popup_36c3e19b21fc476db6b02439233ae85c);
+
+            
+        
+    
+
+            var marker_62e3f19a38d94152b2a6f9989fd9ae3b = L.marker(
+                [-6.271389,106.819725],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_684f6337f1e042a6b63c21fc86bd77cf);
+            
+    
+            var popup_d225ff5e2de445598037cb38bb409685 = L.popup({maxWidth: '300'});
+
+            
+                var html_242a27692e6a4d47a061ba57ec8e7ef5 = $('<div id="html_242a27692e6a4d47a061ba57ec8e7ef5" style="width: 100.0%; height: 100.0%;">PUSKESMAS KECAMATAN MAMPANG PRAPATAN</div>')[0];
+                popup_d225ff5e2de445598037cb38bb409685.setContent(html_242a27692e6a4d47a061ba57ec8e7ef5);
+            
+
+            marker_62e3f19a38d94152b2a6f9989fd9ae3b.bindPopup(popup_d225ff5e2de445598037cb38bb409685);
+
+            
+        
+    
+
+            var marker_cd4497f1274442b98a39747bb1decf01 = L.marker(
+                [-6.255278,106.839165],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_684f6337f1e042a6b63c21fc86bd77cf);
+            
+    
+            var popup_d47d5c260edb4f86959594ddc475e349 = L.popup({maxWidth: '300'});
+
+            
+                var html_eb2a63f0d5164366a997093b9ac48851 = $('<div id="html_eb2a63f0d5164366a997093b9ac48851" style="width: 100.0%; height: 100.0%;">PUSKESMAS KECAMATAN PANCORAN</div>')[0];
+                popup_d47d5c260edb4f86959594ddc475e349.setContent(html_eb2a63f0d5164366a997093b9ac48851);
+            
+
+            marker_cd4497f1274442b98a39747bb1decf01.bindPopup(popup_d47d5c260edb4f86959594ddc475e349);
+
+            
+        
+    
+
+            var marker_4d9ec4aeea0d42ad94db73e8166eaf19 = L.marker(
+                [-6.235556,106.856667],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_684f6337f1e042a6b63c21fc86bd77cf);
+            
+    
+            var popup_52851ef223754dc49b17642fb9dc392c = L.popup({maxWidth: '300'});
+
+            
+                var html_e74d106a74b7454b816df97182387dd5 = $('<div id="html_e74d106a74b7454b816df97182387dd5" style="width: 100.0%; height: 100.0%;">PUSKESMAS KECAMATAN TEBET</div>')[0];
+                popup_52851ef223754dc49b17642fb9dc392c.setContent(html_e74d106a74b7454b816df97182387dd5);
+            
+
+            marker_4d9ec4aeea0d42ad94db73e8166eaf19.bindPopup(popup_52851ef223754dc49b17642fb9dc392c);
+
+            
+        
+    
+
+            var marker_4ca5dab931f849e19f0f4d8e854d4780 = L.marker(
+                [-6.206667,106.833611],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_684f6337f1e042a6b63c21fc86bd77cf);
+            
+    
+            var popup_e3368f77e36d49c6b53eeeac22108247 = L.popup({maxWidth: '300'});
+
+            
+                var html_a6b25e1abbad49d2a82ead03548e69a0 = $('<div id="html_a6b25e1abbad49d2a82ead03548e69a0" style="width: 100.0%; height: 100.0%;">PUSKESMAS KECAMATAN SETIABUDI</div>')[0];
+                popup_e3368f77e36d49c6b53eeeac22108247.setContent(html_a6b25e1abbad49d2a82ead03548e69a0);
+            
+
+            marker_4ca5dab931f849e19f0f4d8e854d4780.bindPopup(popup_e3368f77e36d49c6b53eeeac22108247);
+
+            
+        
+    
+
+            var marker_7212e02c097a49b5b638a30da748d944 = L.marker(
+                [-6.339167,106.861389],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_684f6337f1e042a6b63c21fc86bd77cf);
+            
+    
+            var popup_340f47e81ec14a0fb6f224f7eb516bb6 = L.popup({maxWidth: '300'});
+
+            
+                var html_64228c78e5584e7d9175b300be556a2f = $('<div id="html_64228c78e5584e7d9175b300be556a2f" style="width: 100.0%; height: 100.0%;">PUSKESMAS KECAMATAN PASAR REBO</div>')[0];
+                popup_340f47e81ec14a0fb6f224f7eb516bb6.setContent(html_64228c78e5584e7d9175b300be556a2f);
+            
+
+            marker_7212e02c097a49b5b638a30da748d944.bindPopup(popup_340f47e81ec14a0fb6f224f7eb516bb6);
+
+            
+        
+    
+
+            var marker_4963e0c558d64c71b6d1984247b520ec = L.marker(
+                [-6.311111,106.874443],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_684f6337f1e042a6b63c21fc86bd77cf);
+            
+    
+            var popup_412c669df6ca41049eb838a95761a435 = L.popup({maxWidth: '300'});
+
+            
+                var html_aee5aa97d196494ba143e2f857154ee7 = $('<div id="html_aee5aa97d196494ba143e2f857154ee7" style="width: 100.0%; height: 100.0%;">PUSKESMAS KECAMATAN CIRACAS</div>')[0];
+                popup_412c669df6ca41049eb838a95761a435.setContent(html_aee5aa97d196494ba143e2f857154ee7);
+            
+
+            marker_4963e0c558d64c71b6d1984247b520ec.bindPopup(popup_412c669df6ca41049eb838a95761a435);
+
+            
+        
+    
+
+            var marker_a761ce6208604a638002ae43aab10dfc = L.marker(
+                [-6.291944,106.906113],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_684f6337f1e042a6b63c21fc86bd77cf);
+            
+    
+            var popup_3f4f64c2005c43f79d9b11234ae31794 = L.popup({maxWidth: '300'});
+
+            
+                var html_d2eb2e414daa4eecbeed0dbb3d707f1d = $('<div id="html_d2eb2e414daa4eecbeed0dbb3d707f1d" style="width: 100.0%; height: 100.0%;">PUSKESMAS KECAMATAN CIPAYUNG</div>')[0];
+                popup_3f4f64c2005c43f79d9b11234ae31794.setContent(html_d2eb2e414daa4eecbeed0dbb3d707f1d);
+            
+
+            marker_a761ce6208604a638002ae43aab10dfc.bindPopup(popup_3f4f64c2005c43f79d9b11234ae31794);
+
+            
+        
+    
+
+            var marker_49e7aa22292640e2b777058a3b91eb63 = L.marker(
+                [-6.282222,106.878059],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_684f6337f1e042a6b63c21fc86bd77cf);
+            
+    
+            var popup_3a8f7a8fd4a54b7385acd9feb9c785c4 = L.popup({maxWidth: '300'});
+
+            
+                var html_5d27aa6a8fab4a10993bfead4541e399 = $('<div id="html_5d27aa6a8fab4a10993bfead4541e399" style="width: 100.0%; height: 100.0%;">PUSKESMAS KECAMATAN MAKASAR</div>')[0];
+                popup_3a8f7a8fd4a54b7385acd9feb9c785c4.setContent(html_5d27aa6a8fab4a10993bfead4541e399);
+            
+
+            marker_49e7aa22292640e2b777058a3b91eb63.bindPopup(popup_3a8f7a8fd4a54b7385acd9feb9c785c4);
+
+            
+        
+    
+
+            var marker_c202cfe67b574f68b55f271a5430ded6 = L.marker(
+                [-6.269722,106.868057],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_684f6337f1e042a6b63c21fc86bd77cf);
+            
+    
+            var popup_ab631c2f71994c21a97554649abe0823 = L.popup({maxWidth: '300'});
+
+            
+                var html_6098ed2a33c24a78aa5acc83dc3d19f0 = $('<div id="html_6098ed2a33c24a78aa5acc83dc3d19f0" style="width: 100.0%; height: 100.0%;">PUSKESMAS KECAMATAN KRAMAT JATI</div>')[0];
+                popup_ab631c2f71994c21a97554649abe0823.setContent(html_6098ed2a33c24a78aa5acc83dc3d19f0);
+            
+
+            marker_c202cfe67b574f68b55f271a5430ded6.bindPopup(popup_ab631c2f71994c21a97554649abe0823);
+
+            
+        
+    
+
+            var marker_d0dee73b1a134fbdb206cbda960e12a8 = L.marker(
+                [-6.213889,106.862778],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_684f6337f1e042a6b63c21fc86bd77cf);
+            
+    
+            var popup_b31d3c5fe2a143758a7534fb241a4cc4 = L.popup({maxWidth: '300'});
+
+            
+                var html_aec7b5cc23264cf1b631c72b4ade4c5b = $('<div id="html_aec7b5cc23264cf1b631c72b4ade4c5b" style="width: 100.0%; height: 100.0%;">PUSKESMAS KECAMATAN JATINEGARA</div>')[0];
+                popup_b31d3c5fe2a143758a7534fb241a4cc4.setContent(html_aec7b5cc23264cf1b631c72b4ade4c5b);
+            
+
+            marker_d0dee73b1a134fbdb206cbda960e12a8.bindPopup(popup_b31d3c5fe2a143758a7534fb241a4cc4);
+
+            
+        
+    
+
+            var marker_734df51750df4c31b88fe5f8ec4f3dc4 = L.marker(
+                [-6.241944,106.910835],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_684f6337f1e042a6b63c21fc86bd77cf);
+            
+    
+            var popup_91443fd350ff4a14a4217b1c7fbb8299 = L.popup({maxWidth: '300'});
+
+            
+                var html_d3fcef8666894a73a4c6f07b0387adbe = $('<div id="html_d3fcef8666894a73a4c6f07b0387adbe" style="width: 100.0%; height: 100.0%;">PUSKESMAS KECAMATAN DUREN SAWIT</div>')[0];
+                popup_91443fd350ff4a14a4217b1c7fbb8299.setContent(html_d3fcef8666894a73a4c6f07b0387adbe);
+            
+
+            marker_734df51750df4c31b88fe5f8ec4f3dc4.bindPopup(popup_91443fd350ff4a14a4217b1c7fbb8299);
+
+            
+        
+    
+
+            var marker_3df8c8870ff24647a51fe40d9c0af6f2 = L.marker(
+                [-6.198056,106.905281],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_684f6337f1e042a6b63c21fc86bd77cf);
+            
+    
+            var popup_52959ccf2516494685d6f974f01d3ff7 = L.popup({maxWidth: '300'});
+
+            
+                var html_a002938f5bad410a9959072b47e05db7 = $('<div id="html_a002938f5bad410a9959072b47e05db7" style="width: 100.0%; height: 100.0%;">PUSKESMAS KECAMATAN CAKUNG</div>')[0];
+                popup_52959ccf2516494685d6f974f01d3ff7.setContent(html_a002938f5bad410a9959072b47e05db7);
+            
+
+            marker_3df8c8870ff24647a51fe40d9c0af6f2.bindPopup(popup_52959ccf2516494685d6f974f01d3ff7);
+
+            
+        
+    
+
+            var marker_1b8c863138f3412b9e9655cb49e1dbe7 = L.marker(
+                [-6.186389,106.895554],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_684f6337f1e042a6b63c21fc86bd77cf);
+            
+    
+            var popup_11b4118c5cbd4170ae7d3c1f335c4390 = L.popup({maxWidth: '300'});
+
+            
+                var html_9074a0cf0eef4572ab05a35147aa14d6 = $('<div id="html_9074a0cf0eef4572ab05a35147aa14d6" style="width: 100.0%; height: 100.0%;">PUSKESMAS KECAMATAN PULO GADUNG</div>')[0];
+                popup_11b4118c5cbd4170ae7d3c1f335c4390.setContent(html_9074a0cf0eef4572ab05a35147aa14d6);
+            
+
+            marker_1b8c863138f3412b9e9655cb49e1dbe7.bindPopup(popup_11b4118c5cbd4170ae7d3c1f335c4390);
+
+            
+        
+    
+
+            var marker_5edb7b79506a4588b556f6178f62df19 = L.marker(
+                [-6.206111,106.85611],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_684f6337f1e042a6b63c21fc86bd77cf);
+            
+    
+            var popup_fae7a9d64626440caf513828ddc8a125 = L.popup({maxWidth: '300'});
+
+            
+                var html_2f6c138dd4ff4a2da7276303d167f48a = $('<div id="html_2f6c138dd4ff4a2da7276303d167f48a" style="width: 100.0%; height: 100.0%;">PUSKESMAS KECAMATAN MATRAMAN</div>')[0];
+                popup_fae7a9d64626440caf513828ddc8a125.setContent(html_2f6c138dd4ff4a2da7276303d167f48a);
+            
+
+            marker_5edb7b79506a4588b556f6178f62df19.bindPopup(popup_fae7a9d64626440caf513828ddc8a125);
+
+            
+        
+    
+
+            var marker_8a6a8eae5a524e9db87e72eff8706ba7 = L.marker(
+                [-6.191111,106.81472],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_684f6337f1e042a6b63c21fc86bd77cf);
+            
+    
+            var popup_e0aacf463f5a4340bf79950191d34e6d = L.popup({maxWidth: '300'});
+
+            
+                var html_cafd83883e2d4537a344d839d103ff43 = $('<div id="html_cafd83883e2d4537a344d839d103ff43" style="width: 100.0%; height: 100.0%;">PUSKESMAS KECAMATAN TANAH ABANG</div>')[0];
+                popup_e0aacf463f5a4340bf79950191d34e6d.setContent(html_cafd83883e2d4537a344d839d103ff43);
+            
+
+            marker_8a6a8eae5a524e9db87e72eff8706ba7.bindPopup(popup_e0aacf463f5a4340bf79950191d34e6d);
+
+            
+        
+    
+
+            var marker_2dc4f77132cc41c4b3c98a0c07e2943f = L.marker(
+                [-6.199444,106.84111],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_684f6337f1e042a6b63c21fc86bd77cf);
+            
+    
+            var popup_b2ae0db95ed344108ccd0bce590fc1b4 = L.popup({maxWidth: '300'});
+
+            
+                var html_0be73da2e5c4490d909103f983a3abc5 = $('<div id="html_0be73da2e5c4490d909103f983a3abc5" style="width: 100.0%; height: 100.0%;">PUSKESMAS KECAMATAN MENTENG</div>')[0];
+                popup_b2ae0db95ed344108ccd0bce590fc1b4.setContent(html_0be73da2e5c4490d909103f983a3abc5);
+            
+
+            marker_2dc4f77132cc41c4b3c98a0c07e2943f.bindPopup(popup_b2ae0db95ed344108ccd0bce590fc1b4);
+
+            
+        
+    
+
+            var marker_26049d8bd90c42c395e07b0632bd89f7 = L.marker(
+                [-6.189722,106.842781],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_684f6337f1e042a6b63c21fc86bd77cf);
+            
+    
+            var popup_38270c10b3a54690b0851484b286693a = L.popup({maxWidth: '300'});
+
+            
+                var html_90ebd7628e6c4ce1a46777f4ac8c5f75 = $('<div id="html_90ebd7628e6c4ce1a46777f4ac8c5f75" style="width: 100.0%; height: 100.0%;">PUSKESMAS KECAMATAN SENEN</div>')[0];
+                popup_38270c10b3a54690b0851484b286693a.setContent(html_90ebd7628e6c4ce1a46777f4ac8c5f75);
+            
+
+            marker_26049d8bd90c42c395e07b0632bd89f7.bindPopup(popup_38270c10b3a54690b0851484b286693a);
+
+            
+        
+    
+
+            var marker_395d4fa1f63c47ada492e7b7edfe8378 = L.marker(
+                [-6.181944,106.861664],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_684f6337f1e042a6b63c21fc86bd77cf);
+            
+    
+            var popup_91964c04492c450ead62e6291cf7df72 = L.popup({maxWidth: '300'});
+
+            
+                var html_929d7a46bc5c43bf8602c1c6a04342b7 = $('<div id="html_929d7a46bc5c43bf8602c1c6a04342b7" style="width: 100.0%; height: 100.0%;">PUSKESMAS KECAMATAN JOHAR BARU</div>')[0];
+                popup_91964c04492c450ead62e6291cf7df72.setContent(html_929d7a46bc5c43bf8602c1c6a04342b7);
+            
+
+            marker_395d4fa1f63c47ada492e7b7edfe8378.bindPopup(popup_91964c04492c450ead62e6291cf7df72);
+
+            
+        
+    
+
+            var marker_3a2d63a077414f77a7fc5a073e14ed75 = L.marker(
+                [-6.175556,106.861115],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_684f6337f1e042a6b63c21fc86bd77cf);
+            
+    
+            var popup_d9f0fd2d9f7b440999100fb903cbfdc6 = L.popup({maxWidth: '300'});
+
+            
+                var html_5d29471180014152bac606d9caa08f95 = $('<div id="html_5d29471180014152bac606d9caa08f95" style="width: 100.0%; height: 100.0%;">PUSKESMAS KECAMATAN CEMPAKA PUTIH</div>')[0];
+                popup_d9f0fd2d9f7b440999100fb903cbfdc6.setContent(html_5d29471180014152bac606d9caa08f95);
+            
+
+            marker_3a2d63a077414f77a7fc5a073e14ed75.bindPopup(popup_d9f0fd2d9f7b440999100fb903cbfdc6);
+
+            
+        
+    
+
+            var marker_bf085bfc1a234705bda977de2db99384 = L.marker(
+                [-6.171389,106.855553],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_684f6337f1e042a6b63c21fc86bd77cf);
+            
+    
+            var popup_739ad5dc12604b4e8cf2205dd3e906ab = L.popup({maxWidth: '300'});
+
+            
+                var html_919e64c513714a19b6974f3c2cd41328 = $('<div id="html_919e64c513714a19b6974f3c2cd41328" style="width: 100.0%; height: 100.0%;">PUSKESMAS KECAMATAN KEMAYORAN</div>')[0];
+                popup_739ad5dc12604b4e8cf2205dd3e906ab.setContent(html_919e64c513714a19b6974f3c2cd41328);
+            
+
+            marker_bf085bfc1a234705bda977de2db99384.bindPopup(popup_739ad5dc12604b4e8cf2205dd3e906ab);
+
+            
+        
+    
+
+            var marker_6711044acca24071907d8313c83918ed = L.marker(
+                [-6.137778,106.826942],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_684f6337f1e042a6b63c21fc86bd77cf);
+            
+    
+            var popup_74bff71dfc40472b9d4fc1f4f94330b9 = L.popup({maxWidth: '300'});
+
+            
+                var html_aea3048014da4b3dabe3919752ac806f = $('<div id="html_aea3048014da4b3dabe3919752ac806f" style="width: 100.0%; height: 100.0%;">PUSKESMAS KECAMATAN SAWAH BESAR</div>')[0];
+                popup_74bff71dfc40472b9d4fc1f4f94330b9.setContent(html_aea3048014da4b3dabe3919752ac806f);
+            
+
+            marker_6711044acca24071907d8313c83918ed.bindPopup(popup_74bff71dfc40472b9d4fc1f4f94330b9);
+
+            
+        
+    
+
+            var marker_6aee370ad47b4938ab8c93abe8b97174 = L.marker(
+                [-6.170556,106.819168],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_684f6337f1e042a6b63c21fc86bd77cf);
+            
+    
+            var popup_cbf2e648cf4b41d4b182ecf8c621e9ec = L.popup({maxWidth: '300'});
+
+            
+                var html_bab6fbcbdf644855bc0f13dd0116f165 = $('<div id="html_bab6fbcbdf644855bc0f13dd0116f165" style="width: 100.0%; height: 100.0%;">PUSKESMAS KECAMATAN GAMBIR</div>')[0];
+                popup_cbf2e648cf4b41d4b182ecf8c621e9ec.setContent(html_bab6fbcbdf644855bc0f13dd0116f165);
+            
+
+            marker_6aee370ad47b4938ab8c93abe8b97174.bindPopup(popup_cbf2e648cf4b41d4b182ecf8c621e9ec);
+
+            
+        
+    
+
+            var marker_b42d7ab5eb044e3fb1889d026547f94f = L.marker(
+                [-6.214444,106.724167],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_684f6337f1e042a6b63c21fc86bd77cf);
+            
+    
+            var popup_fda96f919ba6450ea459039ef1ec8083 = L.popup({maxWidth: '300'});
+
+            
+                var html_5ab467bd39ff44a7a22547653e718224 = $('<div id="html_5ab467bd39ff44a7a22547653e718224" style="width: 100.0%; height: 100.0%;">PUSKESMAS KECAMATAN KEMBANGAN</div>')[0];
+                popup_fda96f919ba6450ea459039ef1ec8083.setContent(html_5ab467bd39ff44a7a22547653e718224);
+            
+
+            marker_b42d7ab5eb044e3fb1889d026547f94f.bindPopup(popup_fda96f919ba6450ea459039ef1ec8083);
+
+            
+        
+    
+
+            var marker_b92f3e560abd47ceb01a540c870d26f6 = L.marker(
+                [-6.198889,106.765282],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_684f6337f1e042a6b63c21fc86bd77cf);
+            
+    
+            var popup_3553d4ed78dd4634bb81c8da35b91f44 = L.popup({maxWidth: '300'});
+
+            
+                var html_683e9d5c6a1a4d81ba362a7fb9db3fff = $('<div id="html_683e9d5c6a1a4d81ba362a7fb9db3fff" style="width: 100.0%; height: 100.0%;">PUSKESMAS KECAMATAN KEBON JERUK</div>')[0];
+                popup_3553d4ed78dd4634bb81c8da35b91f44.setContent(html_683e9d5c6a1a4d81ba362a7fb9db3fff);
+            
+
+            marker_b92f3e560abd47ceb01a540c870d26f6.bindPopup(popup_3553d4ed78dd4634bb81c8da35b91f44);
+
+            
+        
+    
+
+            var marker_428b4c1ce7014a44891886ac34e3a3c3 = L.marker(
+                [-6.208333,106.788612],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_684f6337f1e042a6b63c21fc86bd77cf);
+            
+    
+            var popup_05c817d9791048d3a6946723221675be = L.popup({maxWidth: '300'});
+
+            
+                var html_3b186678d0bc47938e7abb0477464a96 = $('<div id="html_3b186678d0bc47938e7abb0477464a96" style="width: 100.0%; height: 100.0%;">PUSKESMAS KECAMATAN PAL MERAH</div>')[0];
+                popup_05c817d9791048d3a6946723221675be.setContent(html_3b186678d0bc47938e7abb0477464a96);
+            
+
+            marker_428b4c1ce7014a44891886ac34e3a3c3.bindPopup(popup_05c817d9791048d3a6946723221675be);
+
+            
+        
+    
+
+            var marker_eb76a1a7506e4f648c101ca99337ff46 = L.marker(
+                [-6.151111,106.779724],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_684f6337f1e042a6b63c21fc86bd77cf);
+            
+    
+            var popup_a3f0d123bd3e40a085b6d18ebd12d733 = L.popup({maxWidth: '300'});
+
+            
+                var html_b529a8ad6b5c4b69b27428416919a2f3 = $('<div id="html_b529a8ad6b5c4b69b27428416919a2f3" style="width: 100.0%; height: 100.0%;">PUSKESMAS KECAMATAN GROGOL PETAMBURAN</div>')[0];
+                popup_a3f0d123bd3e40a085b6d18ebd12d733.setContent(html_b529a8ad6b5c4b69b27428416919a2f3);
+            
+
+            marker_eb76a1a7506e4f648c101ca99337ff46.bindPopup(popup_a3f0d123bd3e40a085b6d18ebd12d733);
+
+            
+        
+    
+
+            var marker_78dc01665a874efc8aa4ce3d59e24c77 = L.marker(
+                [-6.148056,106.804726],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_684f6337f1e042a6b63c21fc86bd77cf);
+            
+    
+            var popup_d6f2ab5dae404c42ba33683f206feef2 = L.popup({maxWidth: '300'});
+
+            
+                var html_4843e7b1aaac4029a5c44b0d41e0bfd4 = $('<div id="html_4843e7b1aaac4029a5c44b0d41e0bfd4" style="width: 100.0%; height: 100.0%;">PUSKESMAS KECAMATAN TAMBORA</div>')[0];
+                popup_d6f2ab5dae404c42ba33683f206feef2.setContent(html_4843e7b1aaac4029a5c44b0d41e0bfd4);
+            
+
+            marker_78dc01665a874efc8aa4ce3d59e24c77.bindPopup(popup_d6f2ab5dae404c42ba33683f206feef2);
+
+            
+        
+    
+
+            var marker_c25cef45a34d44e484dcdf6dcca74614 = L.marker(
+                [-6.143889,106.819168],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_684f6337f1e042a6b63c21fc86bd77cf);
+            
+    
+            var popup_fd75671c55d04715b2fcd5cf0b76dc9c = L.popup({maxWidth: '300'});
+
+            
+                var html_44179de1fc4b42ffa08feb755011bd94 = $('<div id="html_44179de1fc4b42ffa08feb755011bd94" style="width: 100.0%; height: 100.0%;">PUSKESMAS KECAMATAN TAMANSARI</div>')[0];
+                popup_fd75671c55d04715b2fcd5cf0b76dc9c.setContent(html_44179de1fc4b42ffa08feb755011bd94);
+            
+
+            marker_c25cef45a34d44e484dcdf6dcca74614.bindPopup(popup_fd75671c55d04715b2fcd5cf0b76dc9c);
+
+            
+        
+    
+
+            var marker_2aaa16e89cbe4af8bb06636db92d83dd = L.marker(
+                [-6.144444,106.728615],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_684f6337f1e042a6b63c21fc86bd77cf);
+            
+    
+            var popup_9059d5fac3714036b4b64e930691b637 = L.popup({maxWidth: '300'});
+
+            
+                var html_1c593ca6291b46f89171f6a217c6e94e = $('<div id="html_1c593ca6291b46f89171f6a217c6e94e" style="width: 100.0%; height: 100.0%;">PUSKESMAS KECAMATAN CENGKARENG</div>')[0];
+                popup_9059d5fac3714036b4b64e930691b637.setContent(html_1c593ca6291b46f89171f6a217c6e94e);
+            
+
+            marker_2aaa16e89cbe4af8bb06636db92d83dd.bindPopup(popup_9059d5fac3714036b4b64e930691b637);
+
+            
+        
+    
+
+            var marker_86405082982d418182d9421671c56aac = L.marker(
+                [-6.12677,106.7162256],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_684f6337f1e042a6b63c21fc86bd77cf);
+            
+    
+            var popup_52d8c1362b824d36b79c2d22083c53f5 = L.popup({maxWidth: '300'});
+
+            
+                var html_cb148e1e78644891a2b193220ef745d6 = $('<div id="html_cb148e1e78644891a2b193220ef745d6" style="width: 100.0%; height: 100.0%;">PUSKESMAS KECAMATAN KALIDERES</div>')[0];
+                popup_52d8c1362b824d36b79c2d22083c53f5.setContent(html_cb148e1e78644891a2b193220ef745d6);
+            
+
+            marker_86405082982d418182d9421671c56aac.bindPopup(popup_52d8c1362b824d36b79c2d22083c53f5);
+
+            
+        
+    
+
+            var marker_c69dd55f77d34097a90330a84d0f35c3 = L.marker(
+                [-6.138333,106.781113],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_684f6337f1e042a6b63c21fc86bd77cf);
+            
+    
+            var popup_e89e7992d9f04d0580903008b32410e4 = L.popup({maxWidth: '300'});
+
+            
+                var html_32ac535fa8c047a489cd8fb97a71d0e3 = $('<div id="html_32ac535fa8c047a489cd8fb97a71d0e3" style="width: 100.0%; height: 100.0%;">PUSKESMAS KECAMATAN PENJARINGAN</div>')[0];
+                popup_e89e7992d9f04d0580903008b32410e4.setContent(html_32ac535fa8c047a489cd8fb97a71d0e3);
+            
+
+            marker_c69dd55f77d34097a90330a84d0f35c3.bindPopup(popup_e89e7992d9f04d0580903008b32410e4);
+
+            
+        
+    
+
+            var marker_cdf20dd61b64459fbac75fb5478dc2f6 = L.marker(
+                [-6.136944,106.843613],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_684f6337f1e042a6b63c21fc86bd77cf);
+            
+    
+            var popup_7168c768669745ea909d10bbc1af1502 = L.popup({maxWidth: '300'});
+
+            
+                var html_537635091bcf446fb3a54213e73c0d25 = $('<div id="html_537635091bcf446fb3a54213e73c0d25" style="width: 100.0%; height: 100.0%;">PUSKESMAS KECAMATAN PADEMANGAN</div>')[0];
+                popup_7168c768669745ea909d10bbc1af1502.setContent(html_537635091bcf446fb3a54213e73c0d25);
+            
+
+            marker_cdf20dd61b64459fbac75fb5478dc2f6.bindPopup(popup_7168c768669745ea909d10bbc1af1502);
+
+            
+        
+    
+
+            var marker_b87f1050cc724ee59c5e6cf6a21404ed = L.marker(
+                [-6.116111,106.889168],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_684f6337f1e042a6b63c21fc86bd77cf);
+            
+    
+            var popup_8ff54279645543f4b93e0b4dd81bbbfd = L.popup({maxWidth: '300'});
+
+            
+                var html_52e15fd0b73f4e91b52b04f67e637489 = $('<div id="html_52e15fd0b73f4e91b52b04f67e637489" style="width: 100.0%; height: 100.0%;">PUSKESMAS KECAMATAN TANJUNG PRIOK</div>')[0];
+                popup_8ff54279645543f4b93e0b4dd81bbbfd.setContent(html_52e15fd0b73f4e91b52b04f67e637489);
+            
+
+            marker_b87f1050cc724ee59c5e6cf6a21404ed.bindPopup(popup_8ff54279645543f4b93e0b4dd81bbbfd);
+
+            
+        
+    
+
+            var marker_8b71cf67ab65465f82c6eea556f830f9 = L.marker(
+                [-6.119444,106.919441],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_684f6337f1e042a6b63c21fc86bd77cf);
+            
+    
+            var popup_68700ecaa19f4673a33dc0b3eb470df6 = L.popup({maxWidth: '300'});
+
+            
+                var html_d3cb1d81d6624444b881aab68b0e680e = $('<div id="html_d3cb1d81d6624444b881aab68b0e680e" style="width: 100.0%; height: 100.0%;">PUSKESMAS KECAMATAN KOJA</div>')[0];
+                popup_68700ecaa19f4673a33dc0b3eb470df6.setContent(html_d3cb1d81d6624444b881aab68b0e680e);
+            
+
+            marker_8b71cf67ab65465f82c6eea556f830f9.bindPopup(popup_68700ecaa19f4673a33dc0b3eb470df6);
+
+            
+        
+    
+
+            var marker_ba16957c646a4533b100cb913c8f0d07 = L.marker(
+                [-6.155915,106.904785],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_684f6337f1e042a6b63c21fc86bd77cf);
+            
+    
+            var popup_67ad4208a3a944928ed1ab227cf58455 = L.popup({maxWidth: '300'});
+
+            
+                var html_d6b8f243f08d4edf87fa755bf84ea4b9 = $('<div id="html_d6b8f243f08d4edf87fa755bf84ea4b9" style="width: 100.0%; height: 100.0%;">PUSKESMAS KECAMATAN KELAPA GADING</div>')[0];
+                popup_67ad4208a3a944928ed1ab227cf58455.setContent(html_d6b8f243f08d4edf87fa755bf84ea4b9);
+            
+
+            marker_ba16957c646a4533b100cb913c8f0d07.bindPopup(popup_67ad4208a3a944928ed1ab227cf58455);
+
+            
+        
+    
+
+            var marker_d34b44a830ec447db0b9b7eee8eac0da = L.marker(
+                [-6.148333,106.924446],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_684f6337f1e042a6b63c21fc86bd77cf);
+            
+    
+            var popup_9b7cd755a35f435db61eb1c2f1381ec4 = L.popup({maxWidth: '300'});
+
+            
+                var html_b7ee2067628e4b91943f0341d770f498 = $('<div id="html_b7ee2067628e4b91943f0341d770f498" style="width: 100.0%; height: 100.0%;">PUSKESMAS KECAMATAN CILINCING</div>')[0];
+                popup_9b7cd755a35f435db61eb1c2f1381ec4.setContent(html_b7ee2067628e4b91943f0341d770f498);
+            
+
+            marker_d34b44a830ec447db0b9b7eee8eac0da.bindPopup(popup_9b7cd755a35f435db61eb1c2f1381ec4);
+
+            
+        
+    
+
+            var marker_270455f93f0542149e727672deda641c = L.marker(
+                [-5.654261,106.567818],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_684f6337f1e042a6b63c21fc86bd77cf);
+            
+    
+            var popup_0ac5edafd0544dc8be0c47b2f295f4e8 = L.popup({maxWidth: '300'});
+
+            
+                var html_1ba8c758806940699408be5953d54b23 = $('<div id="html_1ba8c758806940699408be5953d54b23" style="width: 100.0%; height: 100.0%;">Pusk. Kec. Kep.Seribu Utara</div>')[0];
+                popup_0ac5edafd0544dc8be0c47b2f295f4e8.setContent(html_1ba8c758806940699408be5953d54b23);
+            
+
+            marker_270455f93f0542149e727672deda641c.bindPopup(popup_0ac5edafd0544dc8be0c47b2f295f4e8);
+
+            
+        
+    
+
+            var marker_94441f2af2294af48358a30623750a77 = L.marker(
+                [-5.798503,106.498444],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_684f6337f1e042a6b63c21fc86bd77cf);
+            
+    
+            var popup_92ec297e0e34402c93e1efc60db3c939 = L.popup({maxWidth: '300'});
+
+            
+                var html_4e233fb3aa574eebac8431ee5e5721fa = $('<div id="html_4e233fb3aa574eebac8431ee5e5721fa" style="width: 100.0%; height: 100.0%;">Pusk. Kec. Kep.Seribu Selatan</div>')[0];
+                popup_92ec297e0e34402c93e1efc60db3c939.setContent(html_4e233fb3aa574eebac8431ee5e5721fa);
+            
+
+            marker_94441f2af2294af48358a30623750a77.bindPopup(popup_92ec297e0e34402c93e1efc60db3c939);
+
+            
+        
+</script>

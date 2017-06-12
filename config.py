@@ -17,6 +17,8 @@ class Config:
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'hard to guess string'
     # SSL
     SSL_DISABLE = True
+    # JAKARTA API TOKEN
+    JAKARTA_API_TOKEN = os.environ.get('JAKARTA_API_TOKEN')
 
     @staticmethod
     def init_app(app):
