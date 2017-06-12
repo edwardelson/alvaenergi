@@ -1,7 +1,7 @@
 """
 views.py
 
-url routing to '/', 'login'
+url routing to '/', '/admin', '/content'
 """
 
 from flask import render_template, session, redirect, url_for, abort, current_app, flash, request
@@ -9,7 +9,7 @@ from datetime import datetime
 from flask_moment import Moment
 
 from . import main
-from .datajkt import jkt_update
+from .datajkt import updateJKTAPI
 from .scrapejkt import updateJKTBlog, updateJKTEvents
 
 @main.route('/')
@@ -25,7 +25,7 @@ def admin():
 @main.route('/content')
 def content():
     # call jakarta api
-    cctv = jkt_update()
+    cctv = updateJKTAPI()
 
     # scrape smartcity.jakarta.go.id news and events
     newsList = updateJKTBlog()
@@ -33,8 +33,7 @@ def content():
 
     # call iframe jakarta api html
     return render_template('content.html',
-                            cctvName=cctv[0],
-                            cctvURL=cctv[1],
+                            cctv=cctv,
                             newsList=newsList,
                             eventsList=eventsList)
 

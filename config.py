@@ -3,7 +3,7 @@ config.py
 
 configure parameters for RumahNumeroUno Webapp
 1. secret key for form
-2. email
+2. JAKARTA API TOKEN
 """
 
 import os

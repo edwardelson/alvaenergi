@@ -24,7 +24,7 @@
         {% endfor %}
     </div>
     <div class="post-tabs">
-        <h3>Live CCTV from {{ cctvName }}</h3>
-        <iframe src="{{ cctvURL }}" height="400" width="500"></iframe>
+        <h3>Live CCTV from {{ cctv.name }}</h3>
+        <iframe src="{{ cctv.url }}" height="400" width="500"></iframe>
     </div>
 {% endblock %}

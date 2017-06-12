@@ -2,7 +2,8 @@
 Web Scraping
 
 pull data from http://smartcity.jakarta.go.id/blog
-pull data from http://smartcity.jakarta.go.id/events"""
+pull data from http://smartcity.jakarta.go.id/events
+"""
 
 import requests
 from bs4 import BeautifulSoup

@@ -3,21 +3,19 @@ Update Jakarta API
 
 1. update puskesmas_jkt.html in templates/
 2. return 1 cctv streaming data
-
-login api jakarta username + password e1467116@mvrht.net
 """
 
 from flask import url_for, current_app
 import os, requests, folium
 
-def jkt_update():
+def updateJKTAPI():
     app = current_app._get_current_object()
 
     # HEADERS
     headers = {"Authorization": app.config["JAKARTA_API_TOKEN"]}
 
     #===============
-    # PUSKESMAS UPDATE
+    # PUSKESMAS UPDATE HTML FILE
     #===============
     # puskesmas
     JAKGO_URL = "http://api.jakarta.go.id/v1/puskesmas"
@@ -46,6 +44,6 @@ def jkt_update():
     data = response.json()
 
     # pick 1st link
-    cctvbalitower = [data["data"][0]["id_site"], data["data"][0]["url"]]
+    cctvbalitower = {'name':data["data"][0]["id_site"], 'url':data["data"][0]["url"]}
 
     return cctvbalitower
